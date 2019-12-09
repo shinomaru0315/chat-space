@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
+.side-ber{
+  height: 100px;
+  width: 300px;
+  background-color: #253141;
+  position: fixed;
+}
+.side-group{
+  height: calc(100vh - 100px);
+  width: 300px;
+  background-color: #2f3e51;
+  margin-top: 100px;
+}
