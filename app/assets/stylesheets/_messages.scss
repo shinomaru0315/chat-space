@@ -7,10 +7,28 @@
   width: 300px;
   background-color: #253141;
   position: fixed;
-}
-.side-group{
-  height: calc(100vh - 100px);
-  width: 300px;
-  background-color: #2f3e51;
-  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__box{
+    background-color: #a7a7a7;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100vh;
+    font-weight: bold;
+    list-style: none;
+  }
+  .side-ber__btn--icon{
+    color: white;
+    margin-left: 5px;
+  }
+  &__group{
+    height: 100vh;
+    width: 300px;
+    background-color: #2f3e51;
+    padding: 100px;
+    
+
+  }
 }

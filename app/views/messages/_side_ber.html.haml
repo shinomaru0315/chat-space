@@ -1,4 +1,14 @@
 .side-ber
-  .side-ber__user
-  .side-group
-
+  .side-ber__box
+    .side-ber__name
+      test
+    .side-ber__icon
+      =link_to "#", class: "side-ber__btn side-ber__btn--new-group" do
+        = icon('fas', 'edit', class: "side-ber__btn--icon")
+        %span<>
+      =link_to "#",  class: "side-ber__btn side-ber__btn--setting" do
+        = icon('fas', 'cog', class: "side-ber__btn--icon")
+        %span<>
+.side-ber__group
+  .side-ber__title
+  .side-ber__text
