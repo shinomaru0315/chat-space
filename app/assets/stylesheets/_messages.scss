@@ -50,8 +50,32 @@
 
 .main{
   &__top{
-    height: 100px;
     width: calc(100vw - 300px);
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+    padding: 0 40px;
+    &__group{
+      padding-top: 35px;
+      color: #333333;
+      &__member{
+        margin-top: 15px;
+        font-size: 12px;
+        color: #999999;
+      }
+      &__btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin: 28px;
+        border: 1px solid #38aef0;
+        &__edit--btn{
+          text-decoration: none;
+          color: #38aef0;
+          display: block;
+        }
+      }
+    }
   }
+
 }
