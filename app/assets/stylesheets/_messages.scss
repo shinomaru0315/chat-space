@@ -105,26 +105,32 @@
     background-color: #d2d2d2;
     height: 90px;
     width: calc(100vw - 300px);
-    padding: 0 40px;
-    line-height: 90px;
+    padding: 20px 40px;
     &__text-area{
-      top:20px;
       display: flex;
-      position: relative;
       input.text-area {
         height: 50px;
         width: 100vw;
         padding: 0 40px 0 10px; 
         border-style: none;
-
       }
       &__image{
+        position: relative;
         &__btn--icon{
+          color: black;
           font-size: 1.7rem;
           position: absolute;
           right: 10px;
           top:10px;
         }
+      }
+      &--btn{
+
+        height: 50px;
+        width: 100px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: #ffffff;
       }
     }
   }
