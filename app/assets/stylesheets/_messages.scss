@@ -50,11 +50,13 @@
 
 .main{
   &__top{
+    height: 100px;
     width: calc(100vw - 300px);
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     padding: 0 40px;
+    background-color: #ffffff;
     &__group{
       padding-top: 35px;
       color: #333333;
@@ -77,5 +79,29 @@
       }
     }
   }
+  &__chat{
+    background-color:#fafafa;
+    padding: 35px 0 0 40px;
+    height: calc(100vh - 100px - 90px);
+    border-bottom: solid 1px #eee;
+    &__name{
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      &__time{
+        color: #999999;
+        margin-left: 10px;
+        font-size: 12px;
+      }
+    }
+    &__message{
+      font-size: 14px;
+      color: #434A54;
+      margin-bottom: 46px;
+    }
+  }
 
+  &__form{
+    
+  }
 }
