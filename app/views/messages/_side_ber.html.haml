@@ -1,22 +1,18 @@
 .side-ber
-  .side-ber__box
-    .side-ber__name
-      test
-    .side-ber__icon
-      =link_to "#", class: "side-ber__btn side-ber__btn--new-group" do
-        = icon('fas', 'edit', class: "side-ber__btn--icon")
-        %span<>
-      =link_to "#",  class: "side-ber__btn side-ber__btn--setting" do
-        = icon('fas', 'cog', class: "side-ber__btn--icon")
-        %span<>
-.side-ber__group
-  .side-ber__group__title
-    title
-  .side-ber__group__text
-    まだメッセージがありません
+  .side-ber__header
+    .side-ber__header__box
+      .side-ber__header__box__name
+        test
+      .side-ber__header__box__icon
+        =link_to "#", class: "side-ber__icon-edit " do
+          = icon('fas', 'edit', class: "side-ber__header__box__icon__btn--icon")
+          %span<>
+        =link_to "#",  class: "side-ber__btn " do
+          = icon('fas', 'cog', class: "side-ber__header__box__icon__btn--icon")
+          %span<>
+  .side-ber__list
+    .side-ber__list__title
+      title
+    .side-ber__list__text
+      まだメッセージがありません
 
-.group
-  .group__title
-  テストグループ
-  .group__button
-  .group__member
