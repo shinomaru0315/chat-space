@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+}
+.side-ber{ 
+  &__header{
+    background-color: #253141;
+    width: 300px;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    &__box{
+      margin: 40px auto;
+      font-weight: bold;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      &__name{
+        color: #ffffff;
+      }
+      &__icon{
+        &__btn--icon{
+          color: white;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &__list{
+    height: calc(100vh - 100px);
+    width: 300px;
+    background-color: #2f3e51;
+    padding: 0 20px;
+    color: white;
+    &__title{
+      padding-top: 20px;
+      font-size: 15px;
+    }
+    &__text{
+      margin: 5px 0 40px 0;
+      font-size: 11px;
+    }
+  }
+}
+
+.main{
+  &__top{
+    height: 100px;
+    width: calc(100vw - 300px);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+    padding: 0 40px;
+    background-color: #ffffff;
+    &__group{
+      padding-top: 35px;
+      color: #333333;
+      &__member{
+        margin-top: 15px;
+        font-size: 12px;
+        color: #999999;
+      }
+      &__btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin: 28px;
+        border: 1px solid #38aef0;
+        &__edit--btn{
+          text-decoration: none;
+          color: #38aef0;
+          display: block;
+        }
+      }
+    }
+  }
+  &__chat{
+    background-color:#fafafa;
+    padding: 35px 0 0 40px;
+    height: calc(100vh - 100px - 90px);
+    border-bottom: solid 1px #eee;
+    &__name{
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      &__time{
+        color: #999999;
+        margin-left: 10px;
+        font-size: 12px;
+      }
+    }
+    &__message{
+      font-size: 14px;
+      color: #434A54;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__form{
+    background-color: #d2d2d2;
+    height: 90px;
+    width: calc(100vw - 300px);
+    padding: 20px 40px;
+    &__text-area{
+      display: flex;
+      input.text-area {
+        height: 50px;
+        width: 100vw;
+        padding: 0 40px 0 10px; 
+        border-style: none;
+      }
+      &__image{
+        position: relative;
+        &__btn--icon{
+          color: black;
+          font-size: 1.7rem;
+          position: absolute;
+          right: 10px;
+          top:10px;
+        }
+      }
+      &--btn{
+
+        height: 50px;
+        width: 100px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: #ffffff;
+      }
+    }
+  }
+}
