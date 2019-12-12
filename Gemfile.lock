@@ -61,6 +61,8 @@ GEM
     devise-i18n (1.9.0)
       devise (>= 4.7.1)
     devise-i18n-views (0.3.7)
+    erb2haml (0.1.5)
+      html2haml
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.11.3)
@@ -199,6 +201,7 @@ DEPENDENCIES
   devise
   devise-i18n
   devise-i18n-views
+  erb2haml
   font-awesome-sass
   haml-rails
   jbuilder (~> 2.5)
