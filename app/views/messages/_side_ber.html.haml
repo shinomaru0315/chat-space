@@ -7,12 +7,12 @@
         =link_to new_group_path, class: "side-ber__icon-edit " do
           = icon('fas', 'edit', class: "side-ber__header__box__icon__btn--icon")
           %span<>
-        =link_to edit_user_path(current_user) do
+        =link_to edit_user_path(current_user), class: "side-ber__icon-cog " do
           = icon('fas', 'cog', class: "side-ber__header__box__icon__btn--icon")
           %span<>
   .side-ber__lists
-    - current_user.groups.each do |group|
-      .side-ber__lists__list
+    .side-ber__lists__list
+      - current_user.groups.each do |group|
         = link_to '#' do
           .side-ber__lists__list__name
             = group.name
