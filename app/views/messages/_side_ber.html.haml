@@ -2,25 +2,22 @@
   .side-ber__header
     .side-ber__header__box
       .side-ber__header__box__name
-        test
+        = current_user.name
       .side-ber__header__box__icon
-        =link_to "#", class: "side-ber__icon-edit " do
+        =link_to new_group_path, class: "side-ber__icon-edit " do
           = icon('fas', 'edit', class: "side-ber__header__box__icon__btn--icon")
           %span<>
-        =link_to "#",  class: "side-ber__btn " do
+        =link_to edit_user_path(current_user), class: "side-ber__icon-cog " do
           = icon('fas', 'cog', class: "side-ber__header__box__icon__btn--icon")
           %span<>
-  .side-ber__list
-    .side-ber__list__title
-      title
-    .side-ber__list__text
-      まだメッセージがありません
-    .side-ber__list__title
-      title２
-    .side-ber__list__text
-      まだメッセージがありません２
-    .side-ber__list__title
-      title３
-    .side-ber__list__text
-      まだメッセージがありません３
+  .side-ber__lists
+    .side-ber__lists__list
+      - current_user.groups.each do |group|
+        = link_to '#' do
+          .side-ber__lists__list__name
+            = group.name
+          .side-ber__lists__list__message
+            メッセージはまだありません。
+
+      
 
