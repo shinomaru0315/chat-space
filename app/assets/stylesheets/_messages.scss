@@ -91,52 +91,67 @@
     padding: 35px 0 0 40px;
     height: calc(100vh - 100px - 90px);
     border-bottom: solid 1px #eee;
-    &__name{
-      font-weight: bold;
-      margin-bottom: 12px;
-      display: flex;
-      &__time{
-        color: #999999;
-        margin-left: 10px;
-        font-size: 12px;
+    .message{
+      .upper-message{
+        display: flex;
+        &__user-name{
+          font-weight: bold;
+          margin-bottom: 12px;
+          display: flex;
+        }
+        &__date{
+          color: #999999;
+          margin-left: 10px;
+          font-size: 12px;
+          }
+        }
+      .lower-message{
+        &__content{
+          font-size: 14px;
+          color: #434A54;
+          margin-bottom: 46px;
+        }
       }
-    }
-    &__message{
-      font-size: 14px;
-      color: #434A54;
-      margin-bottom: 46px;
     }
   }
 
-  &__form{
+
+  .form{
     background-color: #d2d2d2;
     height: 90px;
     width: calc(100vw - 300px);
     padding: 20px 40px;
     &__text-area{
       display: flex;
-      input.text-area {
+      &__field {
         height: 50px;
         width: 100vw;
         padding: 0 40px 0 10px; 
         border-style: none;
       }
-      &__image{
-        position: relative;
-        &__btn--icon{
-          color: black;
-          font-size: 1.7rem;
-          position: absolute;
-          right: 10px;
-          top:10px;
+      &__mask{
+        &__image{
+          cursor: pointer;
+          position: relative;
+          &__icon{
+            color: black;
+            font-size: 1.7rem;
+            position: absolute;
+            right: 10px;
+            top:10px;
+          }
+          &__hidden{
+            display: none;
+          }
         }
       }
-      &--btn{
+      .form__submit{
         height: 50px;
         width: 100px;
         margin-left: 15px;
         background-color: #38aef0;
         color: #ffffff;
+        cursor: pointer;
       }
     }
   }
