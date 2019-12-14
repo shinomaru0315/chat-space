@@ -1,40 +1,28 @@
 .main
-  .main__top
-    .main__top__group
-      テストグループ
-      .main__top__group__member
-        member: test
-    .main__top__group__btn
-      = link_to "Edit","#", class: "main__top__group__btn__edit--btn"
+  .top
+    = render partial: "groups/top"
+
   .main__chat
-    .main__chat__name
-      testmen
-      .main__chat__name__time
-        2019/12/10/(tue) 12:12:12
-    .main__chat__message
-      おはよう
+    = render @messages
+      
 
-    .main__chat__name
-      testmen
-      .main__chat__name__time
-        2019/12/10/(tue) 12:13:13
-    .main__chat__message
-      頑張ろう〜
 
-    .main__chat__name
-      testmen
-      .main__chat__name__time
-        2019/12/10/(tue) 12:14:14
-    .main__chat__message
-      テスト３っつめ
+  .form
+    = form_for [@group, @message], html:{class:'form__text-area'}do |f|
+      = f.text_field :content,class: 'form__text-area__field', placeholder: 'type a message'
+      .form__text-area__mask
+        = f.label :image, class: 'form__text-area__mask__image'do
+          = icon('fas', 'image', class: 'form__text-area__mask__image__icon')
+          = f.file_field :image, class: 'form__text-area__mask__image__hidden'
+      = f.submit 'Send', class: 'form__submit'
 
-  .main__form
-    .main__form__text-area
-      %input(type="text" class="text-area" placeholder="type to message")
-      .main__form__text-area__image
-        =link_to "#", class: "main__form__text-area__image--icon " do
-        %label{class:"side-ber__header__box__icon"}
-          = icon('far', 'image', class: "main__form__text-area__image__btn--icon")
-          %input{type: "file"}
-      .main__form__text-area__btn
-        %input(type="submit" class="main__form__text-area--btn" value="SEND")
+  -# .main__form
+  -#   .main__form__text-area
+  -#     %input(type="text" class="text-area" placeholder="type to message")
+  -#     .main__form__text-area__image
+  -#       =link_to "#", class: "main__form__text-area__image--icon " do
+  -#       %label{class:"side-ber__header__box__icon"}
+  -#         = icon('far', 'image', class: "main__form__text-area__image__btn--icon")
+  -#         %input{type: "file"}
+  -#     .main__form__text-area__btn
+  -#       %input(type="submit" class="main__form__text-area--btn" value="SEND")
