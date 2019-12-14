@@ -1,11 +1,7 @@
 .main
-  .main__top
-    .main__top__group
-      テストグループ
-      .main__top__group__member
-        member: test
-    .main__top__group__btn
-      = link_to "Edit","#", class: "main__top__group__btn__edit--btn"
+  .top
+    = render partial: "groups/top"
+
   .main__chat
     = render @messages
       

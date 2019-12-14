@@ -16,12 +16,12 @@
     align-items: center;
     &__box{
       margin: 40px auto;
-      font-weight: bold;
       list-style: none;
       display: flex;
       justify-content: space-between;
       width: 100vw;
       &__name{
+        font-weight: bold;
         color: #ffffff;
       }
       &__icon{
@@ -56,7 +56,7 @@
 }
 
 .main{
-  &__top{
+  .top{
     height: 100px;
     width: calc(100vw - 300px);
     display: flex;
@@ -65,24 +65,31 @@
     padding: 0 40px;
     background-color: #ffffff;
     &__group{
+      font-size: 20px;
       padding-top: 35px;
       color: #333333;
-      &__member{
+      &__members{
         margin-top: 15px;
         font-size: 12px;
         color: #999999;
-      }
-      &__btn{
-        height: 40px;
-        line-height: 40px;
-        padding: 0 20px;
-        margin: 28px;
-        border: 1px solid #38aef0;
-        &__edit--btn{
-          text-decoration: none;
-          color: #38aef0;
-          display: block;
+        &__lists{
+          display: flex;
+          &__list{
+            margin-left: 5px;
+          }
         }
+      }
+    }
+    &__btn{
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      margin: 28px;
+      border: 1px solid #38aef0;
+      &__edit--btn{
+        text-decoration: none;
+        color: #38aef0;
+        display: block;
       }
     }
   }
@@ -146,6 +153,7 @@
         }
       }
       .form__submit{
+        padding: 0 30px;
         height: 50px;
         width: 100px;
         margin-left: 15px;

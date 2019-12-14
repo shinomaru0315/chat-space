@@ -1,0 +1,10 @@
+.top__group
+  = @group.name
+  .top__group__members
+    .top__group__members__lists
+      Member：
+      - @group.users.each do |user|
+        .top__group__members__lists__list
+          = user.name
+.top__btn
+  = link_to "Edit",edit_group_path(@group.id), class: "top__btn__edit--btn"
