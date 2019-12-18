@@ -33,6 +33,7 @@
     }
   }
   &__lists{
+    overflow: scroll;
     &__list{
       height: calc(100vh - 100px);
       width: 300px;
@@ -98,6 +99,7 @@
     padding: 35px 0 0 40px;
     height: calc(100vh - 100px - 90px);
     border-bottom: solid 1px #eee;
+    overflow: scroll;
     .message{
       .upper-message{
         display: flex;
